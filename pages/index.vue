@@ -47,7 +47,7 @@
                   <label>{{ pelada.horaInicio }} - {{ pelada.horaFim }}</label>
                 </td>
                 <td>
-                  <label>Campo de Ronaldo - Arez/RN</label>
+                  <label>{{ pelada.local }}</label>
                 </td>
                 <td>
                   <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSenha">ENTRAR</button>
@@ -57,24 +57,24 @@
           </table>
         </div>
       </div>
-       <!-- Modal -->
-       <div class="modal fade" id="modalSenha" tabindex="-1" aria-hidden="true">
-          <div class="modal-dialog">
-              <div class="modal-content">
-              <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Entrar na pelada</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                  <label>É necessário uma senha para entrar nessa pelada, digite a senha no campo abaixo:</label><br>
-                  <input class="form-control" type="password"/>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                  <button type="button" class="btn btn-primary">Entrar</button>
-              </div>
-              </div>
-          </div>
+      <!-- Modal -->
+      <div class="modal fade" id="modalSenha" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Entrar na pelada</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <label>É necessário uma senha para entrar nessa pelada, digite a senha no campo abaixo:</label><br>
+                <input class="form-control" type="password"/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Entrar</button>
+            </div>
+            </div>
+        </div>
       </div>
     </div>
   </template>
